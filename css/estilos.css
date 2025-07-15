@@ -7,6 +7,13 @@
      --text-defaul: 'Open Sans';
 }
 
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: var(--text-defaul);
+}
+
 .titulos{
      font-size: 40px;
      font-weight: 800px;
@@ -52,7 +59,6 @@
      padding: 15px 45px;
 }
 
-
 .menu-principal{
      width: 100%;
      display: flex;
@@ -80,6 +86,7 @@
 
 .menu-bar .enlaces ul li{
      display: inline-block;
+     padding: 0 10px;;
 }
 
 .menu-bar .enlaces ul li a{
@@ -90,17 +97,17 @@
      color: var(--color-texto);
      font-weight: 600;
 
-     background: linear-gradient(curentColor, currentColor);
+     background: linear-gradient(currentColor, currentColor);
      background-position: 100% 100%;
      background-repeat: no-repeat;
      background-size: 0% 2px;
+     transition: all 0.5s;
 
 }
 
 .menu-bar .enlaces ul li a:hover{
      color: var(--color-secundario);
      background-size: 50% 2px;
-
 }
 
 .menu-bar .sociales a{
@@ -109,12 +116,11 @@
      font-weight: 700;
      text-decoration: none;
      color: var(--color-texto);
-     transition: all 0.5;
+     transition: all 0.5s;
 }
 
 .menu-bar .sociales a:hover{
      color: var(--color-secundario);
-     background-size: 50% 2px;
 }
 
 .menu-principal i{
@@ -122,5 +128,64 @@
      color: var(--color-texto);
      font-size: 30px;
 
-     float: right;
+     float: right; 
+     display: none; 
+     transition: all 0.5s;
+}
+
+.menu-principal i:hover{
+     color: var(--color-secundario);
+}
+
+@media screen and (max-width: 650px) {
+
+     .menu-principal{
+          position: fixed;
+          top: 0;
+          margin-top: 0;
+     }
+
+     .menu-principal i{
+          display: block;
+     }
+
+    .menu-bar{
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+
+          right: 0;
+          top: 0;
+          z-index: 1000;
+
+          background: #333;
+          transition: all 1s;
+          transform: translateX(100%);
+          
+     }
+
+     .menu-bar.active{
+          transform: translateX(0%);
+     }
+
+     .menu-bar i{
+          position: absolute;
+          right: 50px;
+          top: 50px;
+     }
+
+    .menu-bar .enlaces ul li{
+          display: block;
+          padding: 20px 10px;
+          text-align: center;
+     }
+
+     .menu-bar .enlaces ul li a,
+     .menu-bar .sociales a{
+          font-size: 20px;
+     }
 }
