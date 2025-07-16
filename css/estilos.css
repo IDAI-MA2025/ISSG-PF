@@ -138,6 +138,60 @@
 }
 
 
+
+@media screen and (max-width: 650px) {
+
+     .menu-principal{
+          position: fixed;
+          top: 0;
+          margin-top: 0;
+     }
+
+     .menu-principal i{
+          display: block;
+     }
+
+    .menu-bar{
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+
+          right: 0;
+          top: 0;
+          z-index: 1000;
+
+          background: #333;
+          transition: all 1s;
+          transform: translateX(100%);
+          
+     }
+
+     .menu-bar.active{
+          transform: translateX(0%);
+     }
+
+     .menu-bar i{
+          position: absolute;
+          right: 50px;
+          top: 50px;
+     }
+
+    .menu-bar .enlaces ul li{
+          display: block;
+          padding: 20px 10px;
+          text-align: center;
+     }
+
+     .menu-bar .enlaces ul li a,
+     .menu-bar .sociales a{
+          font-size: 20px;
+     }
+}
+
 #servicios{
      height: 100hv;
      background: white;
@@ -243,20 +297,6 @@
      padding: 0 20px;
 }
 
-.persona:hover{
-     flex-grow: 3;
-}
-
-.persona-imagen{
-     height: 100%;
-     position: absolute;
-
-     left: 50%;
-     transform: translateX(-50%);
-
-     filter: grayscale(80%);
-}
-
 
 
 
@@ -275,55 +315,5 @@
      }
 }
 
-@media screen and (max-width: 650px) {
 
-     .menu-principal{
-          position: fixed;
-          top: 0;
-          margin-top: 0;
-     }
 
-     .menu-principal i{
-          display: block;
-     }
-
-    .menu-bar{
-          justify-content: space-around;
-          align-items: center;
-          flex-direction: column;
-
-          width: 100%;
-          height: 100vh;
-          position: fixed;
-
-          right: 0;
-          top: 0;
-          z-index: 1000;
-
-          background: #333;
-          transition: all 1s;
-          transform: translateX(100%);
-          
-     }
-
-     .menu-bar.active{
-          transform: translateX(0%);
-     }
-
-     .menu-bar i{
-          position: absolute;
-          right: 50px;
-          top: 50px;
-     }
-
-    .menu-bar .enlaces ul li{
-          display: block;
-          padding: 20px 10px;
-          text-align: center;
-     }
-
-     .menu-bar .enlaces ul li a,
-     .menu-bar .sociales a{
-          font-size: 20px;
-     }
-}
