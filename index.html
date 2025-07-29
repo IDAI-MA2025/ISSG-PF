@@ -41,13 +41,94 @@
         <i class="fas fa-bars" id="btnMenuOpen"></i>
     </div>
 
-    <section id="menu-productos">
+     <!-- SLIDER DE PRODUCTOS -->
+     <section id="menu-productos">
+          <div class="contenedor-principal">
+               <button id="btn-izquierda">
+                    <span class="fas fa-angle-left"></span>
+               </button>
 
-    </section>
+               <div class="slider">
+                    <div class="container-productos">
+                         <div class="descripcion-productos">
+                              <h2>Producto <b>premium</b></h2>
+                              <h1>Peperonni</h1>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident debitis nihil incidunt quisquam ab reiciendis consequuntur iure.</p>
+                              <button class="btn"> 
+                                   ¡Solicitala aquí! 
+                                   <span class="fas fa-angle-right"></span>
+                              </button>
+                         </div>
 
+                         <div class="imagen-productos">
+                              <img src="img/menu/peperoni.png" alt="">
+                         </div>
+                    </div>
 
+                    <div class="container-productos">
+                         <div class="descripcion-productos">
+                              <h2>Producto <b>premium</b></h2>
+                              <h1>Especial</h1>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident debitis nihil incidunt quisquam ab reiciendis consequuntur iure.</p>
 
+                              <button class="btn"> ¡Solicitala aquí! <span class="fas fa-angle-right"></span></button>
+                         </div>
 
+                         <div class="imagen-productos">
+                              <img src="img/menu/especial.png" alt="">
+                         </div>
+                    </div>
+
+                    <div class="container-productos">
+                         <div class="descripcion-productos">
+                              <h2>Producto <b>básico</b></h2>
+                              <h1>Margarita</h1>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident debitis nihil incidunt quisquam ab reiciendis consequuntur iure.</p>
+
+                              <button class="btn"> ¡Solicitala aquí! <span class="fas fa-angle-right"></span></button>
+                         </div>
+
+                         <div class="imagen-productos">
+                              <img src="img/menu/margarita.png" alt="">
+                         </div>
+                    </div>
+
+                    <div class="container-productos">
+                         <div class="descripcion-productos">
+                              <h2>Producto <b>premium</b></h2>
+                              <h1>Americana</h1>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident debitis nihil incidunt quisquam ab reiciendis consequuntur iure.</p>
+
+                              <button class="btn"> ¡Solicitala aquí! <span class="fas fa-angle-right"></span></button>
+                         </div>
+
+                         <div class="imagen-productos">
+                              <img src="img/menu/americana.png" alt="">
+                         </div>
+                    </div>
+
+                    <div class="container-productos">
+                         <div class="descripcion-productos">
+                              <h2>Producto <b>especial</b></h2>
+                              <h1>Suprema</h1>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident debitis nihil incidunt quisquam ab reiciendis consequuntur iure.</p>
+
+                              <button class="btn"> ¡Solicitala aquí! <span class="fas fa-angle-right"></span></button>
+                         </div>
+
+                         <div class="imagen-productos">
+                              <img src="img/menu/suprema.png" alt="">
+                         </div>
+                    </div>
+               </div>
+
+               <button id="btn-derecha">
+                    <span class="fas fa-angle-right"></span>
+               </button>
+          </div>
+     </section>
+
+    <!-- SECCION DE SERVICIOS -->
     <section id="servicios">
         <div class="servicios-titulos">
             <h2 class="subtitulos">La mejor pizza del mundo</h2>
@@ -85,14 +166,10 @@
         </div>
     </section>
 
-
-
-
-
-
+     <!-- SECCION DE EQUIPO -->
      <section id="equipo">
           <div class="persona">
-               <img src="../img/perfil1.png" alt="" class="persona-imagen">
+               <img src="img/perfil1.png" alt="" class="persona-imagen">
                <div class="persona-info">
                     <h2>Jesús Alonso</h2>
                     <p>Chef Pizzero</p>
@@ -102,12 +179,11 @@
                          <a href=""><span class="fab fa-twitter"></span></a>
                          <a href=""><span class="fab fa-linkedin-in"></span></a>
                     </div>
-
                </div>
           </div>
 
           <div class="persona">
-               <img src="../img/perfil2.png" alt="" class="persona-imagen">
+               <img src="img/perfil2.png" alt="" class="persona-imagen">
                <div class="persona-info">
                     <h2>Eliza Smith</h2>
                     <p>Chef</p>
@@ -122,7 +198,7 @@
           </div>
 
           <div class="persona">
-               <img src="../img/perfil3.png" alt="" class="persona-imagen">
+               <img src="img/perfil3.png" alt="" class="persona-imagen">
                <div class="persona-info">
                     <h2>Henry Griffith</h2>
                     <p>Asistente Chef</p>
@@ -137,7 +213,7 @@
           </div>
 
           <div class="persona">
-               <img src="../img/perfil4.png" alt="" class="persona-imagen">
+               <img src="img/perfil4.png" alt="" class="persona-imagen">
                <div class="persona-info">
                     <h2>Paulina Vega</h2>
                     <p>Asistente</p>
@@ -152,13 +228,41 @@
           </div>
      </section>
 
-
+     <!-- SECCION CONTACTO -->
      <section id="contacto">
+          <div class="titulo-contacto">
+               <h2 class="subtitulos">Queremos conocer tu opinión</h2>
+               <h1 class="titulos">Contáctanos</h1>
+          </div>
+
+          <form action="" id="formulario">
+               <div class="two-fiels">
+                    <div class="inputConIcon">
+                         <input type="text" id="nombre" name="nombre" class="input-text" placeholder="Nombre">
+                         <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="inputConIcon">
+                         <input type="email" id="email" name="email" class="input-email" placeholder="Email">
+                         <i class="fas fa-envelope"></i>
+                    </div>
+               </div>
+
+               <div class="fiels">
+                    <div class="inputConIcon textareaIcon">
+                         <textarea name="comentarios" id="comentarios" class="textarea" placeholder="Ingrese su mensaje"></textarea>
+                         <i class="fas fa-comments"></i>
+                    </div>
+               </div>
+
+               <div class="fiels-btn">
+                    <input type="submit" class="btn btn-input" value="Enviar">
+               </div>
+          </form>
      </section>
+
 
 
     <script src="js/app.js"></script>
 </body>
 </html>
-
---
